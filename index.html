@@ -1,120 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saleheen Shibli | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #0f172a;
-            color: #e2e8f0;
-        }
-
-        header {
-            background: #1e293b;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #38bdf8;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h1, h2 {
-            color: #38bdf8;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        button {
-            background: #38bdf8;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            color: #0f172a;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e293b;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Shibli, the facilitator of Galaxies</h1>
-    <p>Software Developer | Data & UX Enthusiast</p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-        <p>I am a senior software developer with experience in Python, Django, and data analysis. I enjoy building practical systems, exploring UX design, and teaching IT concepts.</p>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>CRM System</h3>
-        <p>A customer management system with file export and filtering capabilities.</p>
-    </div>
-
-    <div class="card">
-        <h3>Image Processing Workflow</h3>
-        <p>Django-based system handling multi-stage processing and validation of images.</p>
-    </div>
-
-    <div class="card">
-        <h3>Data Visualization (R)</h3>
-        <p>Explored relationships in datasets using ggplot2 and statistical techniques.</p>
-    </div>
-
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: <span id="email">Click to reveal</span></p>
-        <button onclick="showEmail()">Show Email</button>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Saleheen Shibli</p>
-</footer>
-
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow" />
+<title>TEC305 Learning Hub</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f7fb;--card:#fff;--tx:#1d2433;--mu:#667085;--ac:#3b5bdb;--ok:#2b8a3e;--bad:#c92a2a;--bd:#e2e5ee}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--card:#1b2030;--tx:#e8ebf3;--mu:#98a2b8;--ac:#7c93ff;--ok:#69db7c;--bad:#ff8787;--bd:#2c3348}}
+:root[data-theme="dark"]{--bg:#12151c;--card:#1b2030;--tx:#e8ebf3;--mu:#98a2b8;--ac:#7c93ff;--ok:#69db7c;--bad:#ff8787;--bd:#2c3348}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem;margin:.2rem 0}h2{font-size:1.15rem;margin:.2rem 0 .6rem}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:10px 0}
+.mu{color:var(--mu);font-size:.9rem}
+button,input{font:inherit;border-radius:8px;border:1px solid var(--bd);padding:8px 12px;background:var(--card);color:var(--tx)}
+button{cursor:pointer}button.p{background:var(--ac);color:#fff;border-color:var(--ac)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.t{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--bd);border-radius:10px;margin:6px 0;background:var(--card);width:100%;text-align:left}
+.t[disabled]{opacity:.55;cursor:not-allowed}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}
+.ok{color:var(--ok)}.bad{color:var(--bad)}
+.tabs button.on{border-color:var(--ac);color:var(--ac)}
+.sc{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.88rem}td,th{border-bottom:1px solid var(--bd);padding:6px 8px;text-align:left;white-space:nowrap}
+code{background:var(--bg);padding:1px 5px;border-radius:5px}
+.nd{cursor:pointer;transition:transform .45s ease}.nd circle{fill:var(--card);stroke:var(--ac);stroke-width:2}.nd text{fill:var(--tx);text-anchor:middle;font-weight:600;font-size:16px}.nd.sel circle{fill:var(--ac)}.nd.sel text{fill:#fff}svg{max-width:100%;height:auto}</style></head><body><main>
+<h1>TEC305 Learning Hub</h1>
+<p class="mu">Algorithms and Data Structures: theory and practice, unlocked week by week.</p>
+<div id="app"></div>
+</main>
 <script>
-    function showEmail() {
-        document.getElementById('email').textContent = 'shibli.saleheen@oblivion.galaxies';
-    }
-</script>
+// Topics. Weeks with no entry (e.g. week 4) are simply absent.
+var T=[
+{w:1,n:"Intro to Algorithms & Data Structures",th:"An algorithm is a finite set of steps with at least one input and one output. A data structure organises data so operations are efficient. Structures are linear (array, linked list, stack, queue) or non-linear (tree, heap, hash table, graph). Python adds list, tuple, set and dict.",q:"Which of these is a linear data structure?",o:["Binary tree","Graph","Queue","Hash table"],a:2,e:"A queue stores items in sequence. Trees and graphs are non-linear."},
+{w:2,n:"Fundamental Data Structures",h:"1e8d4b5f",th:"Arrays index from 0 with O(1) access. Linked lists chain nodes by pointers (singly, doubly, circular). A stack is LIFO (push/pop), and a queue is FIFO (enqueue/dequeue).",q:"Start with an empty stack. push('a'), push('b'), pop(), push('c'). What does peek() return?",o:["'a'","'b'","'c'","Stack is empty"],a:2,e:"After pop removes 'b', the stack is a, c, so the top is 'c'."},
+{w:3,n:"Trees & Binary Trees",th:"A tree has a root, edges, parents, children and leaves. In a BST, left < node < right. AVL trees keep each balance factor in {-1, 0, +1} using rotations (LL, RR, LR, RL). B-Trees hold many keys per node to cut disk access.",q:"What does an in-order traversal of a BST produce?",o:["Keys in sorted order","Keys in insertion order","Keys level by level","Leaves only"],a:0,e:"In-order visits left, root, right, which gives ascending order in a BST."},
+{w:5,n:"Advanced Data Structures",th:"Hashing maps a key to an index with a hash function; collisions are handled by e.g. chaining. A heap is a complete binary tree where each parent is >= (max-heap) or <= (min-heap) its children. A graph is vertices plus edges, stored as an adjacency matrix or list. BFS uses a queue, DFS a stack.",q:"In an array-based heap, where is the left child of the node at index i?",o:["i + 1","2i + 1","2i + 2","i / 2"],a:1,e:"Left child is 2i+1 and right child is 2i+2."},
+{w:6,n:"Abstract Data Types",th:"An ADT defines what operations do, not how they are implemented. Stack, queue, list and tree ADTs can each be built on different underlying structures. Benefits: encapsulation, abstraction, information hiding, modularity.",q:"enqueue(1), enqueue(2), enqueue(3), dequeue(). What is at the front now?",o:["1","2","3","Empty"],a:1,e:"FIFO: dequeue removed 1, so 2 is now at the front."},
+{w:7,n:"Sorting Algorithms",th:"Bubble sort swaps adjacent out-of-order pairs; insertion sort inserts each item into the sorted part; selection sort repeatedly picks the minimum. Merge sort and quick sort use divide and conquer for O(n log n) typical time.",q:"One bubble-sort pass (ascending) on [5, 3, 8, 1] gives:",o:["[1, 3, 5, 8]","[3, 5, 1, 8]","[3, 5, 8, 1]","[1, 5, 3, 8]"],a:1,e:"5,3 swap -> 3,5,8,1. 5,8 stay. 8,1 swap -> 3,5,1,8. The largest is now last."},
+{w:8,n:"Searching & Hashing",th:"Linear search checks items one by one: O(n), works on unsorted data. Binary search halves a sorted range each step: O(log n). Hash tables give average O(1) lookup, using separate chaining to handle collisions.",q:"What does binary search require?",o:["A sorted collection","A linked list","A hash table","Unique values only"],a:0,e:"Halving the range only works if the data is sorted (and randomly accessible)."},
+{w:9,n:"Algorithm Analysis & Big-O",th:"Big-O describes worst-case growth: O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n). Time complexity counts steps; space complexity counts memory. Two separate loops over N and M cost O(N + M).",q:"i = N; while i > 0: i //= 2. What is the time complexity?",o:["O(N)","O(sqrt N)","O(N/2)","O(log N)"],a:3,e:"i halves each iteration, so it takes about log2(N) steps."},
+{w:10,n:"Algorithm Design Techniques",th:"Brute force tries everything. Greedy takes the best local choice (fast, not always optimal). Divide and conquer splits, solves and combines (merge sort). Dynamic programming stores overlapping subproblem results (Fibonacci, knapsack).",q:"Greedy coin change with [25, 10, 5, 1] for 67 cents uses how many coins?",o:["4","5","6","7"],a:2,e:"25+25+10+5+1+1 = 67, which is 6 coins."},
+{w:11,n:"Recursion & Backtracking",th:"A recursive function calls itself on a smaller problem and needs a base case to stop. Recursion is concise but has call overhead. Backtracking builds a solution step by step and undoes (backtracks) choices that cannot lead to a solution, as in N-Queens and Sudoku.",q:"What is the purpose of a base case?",o:["Speed up the code","Stop the recursion","Store results","Sort the input"],a:1,e:"Without a base case the function calls itself forever."},
+{w:12,n:"Applications: Red-Black Trees & Dijkstra",th:"Red-Black trees are self-balancing BSTs that guarantee O(log n) search, insert and delete. Dijkstra's algorithm finds shortest paths from a source in a graph with non-negative weights, using a min-priority queue. Choose structures by the problem: stack for undo, queue for scheduling, graph for maps.",q:"Which structure does Dijkstra's algorithm use to pick the next vertex?",o:["Stack","Min-priority queue","Hash table","Linked list"],a:1,e:"It repeatedly extracts the unvisited vertex with the smallest distance."}
+];
+// Hashed unlock codes (week -> hash). Week 1 is open.
+var H={2:"97666364",3:"9e518ec1",5:"b5ab2811",6:"9632c630",7:"c7f40d75",8:"94cf3a03",9:"9da5d2e2",10:"96bdf685",11:"c220fe9a",12:"978978ec"};
+var MASTER="2cba1f0";
+function hs(s){var x=5381;for(var i=0;i<s.length;i++)x=((x*33)^s.charCodeAt(i))>>>0;return x.toString(16)}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 
-</body>
-</html>
+var CFG={endpoint:""}; // optional: URL of a Google Apps Script / webhook that receives progress
+var S={name:"",un:[1],th:{},pr:{},seen:0},cur=null,tab="th",db=null,uid=null,owner=false,rows=[],msg="",timer=null,KEY="tec305_state";
+function load(){try{var r=localStorage.getItem(KEY);if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
+ S.seen=Date.now();clearTimeout(timer);timer=setTimeout(sync,1200)}
+function sync(){if(!CFG.endpoint||!S.name)return;
+ try{fetch(CFG.endpoint,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body:JSON.stringify(Object.assign({student:S.name},S))})}catch(e){}}
+function T_(w){return T.filter(function(t){return t.w==w})[0]}
+
+function render(){
+ var a=document.getElementById("app"),h="";
+ if(!S.name){a.innerHTML='<div class="card"><h2>Welcome</h2><p class="mu">Enter your name so your teacher can see which topics are being used.</p><div class="row"><input id="nm" placeholder="Your name or student ID"><button class="p" onclick="setName()">Start</button></div></div>'+dash();return}
+ h+='<div class="card"><div class="row" style="justify-content:space-between"><b>'+esc(S.name)+'</b><span class="mu">'+S.un.length+' of '+T.length+' topics unlocked</span></div>';
+ h+='<div class="row" style="margin-top:8px"><input id="cd" placeholder="Enter unlock code" style="flex:1"><button class="p" onclick="unlock()">Unlock</button></div>';
+ if(msg)h+='<div class="mu" style="margin-top:6px">'+msg+'</div>';h+='</div>';
+ if(!cur){
+  T.forEach(function(t){var u=S.un.indexOf(t.w)>=0,p=S.pr[t.w];
+   h+='<button class="t" '+(u?'onclick="openT('+t.w+')"':'disabled')+'><span><b>Week '+t.w+'</b> '+esc(t.n)+'</span><span class="mu">'+(!u?"Locked":(p&&p.ok?'<span class="ok">Practice done</span>':"Open"))+'</span></button>'});
+ }else{var t=T_(cur),p=S.pr[cur]||{att:0,ok:0};
+  h+='<div class="card"><button onclick="cur=null;render()">Back</button><h2 style="margin-top:10px">Week '+t.w+': '+esc(t.n)+'</h2>';
+  h+='<div class="row tabs"><button class="'+(tab=="th"?"on":"")+'" onclick="tab=\'th\';render()">Theory</button><button class="'+(tab=="pr"?"on":"")+'" onclick="tab=\'pr\';render()">Practice</button></div>';
+  if(tab=="th")h+='<p>'+esc(t.th)+'</p>';
+  else if(V[t.w]){h+='<div id="vz"></div>'}else{h+='<p><b>'+esc(t.q)+'</b></p><div id="qa">';
+   t.o.forEach(function(o,i){h+='<button class="opt" onclick="ans('+i+')">'+esc(o)+'</button>'});
+   h+='</div><div id="fb"></div><p class="mu">Attempts: '+p.att+'</p>'}
+  h+='</div>'}
+ a.innerHTML=h+dash();if(cur&&tab=="pr"&&V[cur])V[cur]()}
+function setName(){var v=document.getElementById("nm").value.trim();if(!v)return;S.name=v.slice(0,40);save();render()}
+function unlock(){var c=document.getElementById("cd").value.trim().toUpperCase(),k=hs(c),w=null;
+ for(var x in H)if(H[x]==k)w=+x;
+ if(k==MASTER){T.forEach(function(t){if(S.un.indexOf(t.w)<0)S.un.push(t.w)});msg='<span class="ok">All topics unlocked.</span>';save()}
+ else if(w===null)msg='<span class="bad">That code is not valid.</span>';
+ else if(S.un.indexOf(w)>=0)msg="Already unlocked.";
+ else{S.un.push(w);msg='<span class="ok">Unlocked Week '+w+'!</span>';save()}
+ render()}
+function openT(w){cur=w;tab="th";S.th[w]=(S.th[w]||0)+1;save();render()}
+function ans(i){var t=T_(cur),p=S.pr[cur]=S.pr[cur]||{att:0,ok:0},r=i==t.a;p.att++;if(r)p.ok=1;save();
+ document.getElementById("fb").innerHTML=(r?'<p class="ok"><b>Correct.</b> ':'<p class="bad"><b>Not quite.</b> ')+esc(t.e)+'</p>'}
+function dash(){return S.name?'<div class="card"><button onclick="expCsv()">Download my progress (CSV)</button></div>':""}
+function expCsv(){var r=["student,week,unlocked,theory_opens,practice_attempts,practice_completed"];
+ T.forEach(function(t){var p=S.pr[t.w]||{att:0,ok:0};r.push([S.name,t.w,S.un.indexOf(t.w)>=0?1:0,S.th[t.w]||0,p.att,p.ok].join(","))});
+ var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([r.join("\n")],{type:"text/csv"}));a.download="tec305_progress.csv";a.click()}
+var V={};
+function rec(ok){var p=S.pr[cur]=S.pr[cur]||{att:0,ok:0};p.att++;if(ok)p.ok=1;save()}
+function $(i){return document.getElementById(i)}
+/* ---- Week 7: sorting in a circle (tap two numbers to swap) ---- */
+var so={alg:"bubble"},INFO={bubble:"Compare neighbours from the start and swap if the left one is bigger. Each pass moves the largest unsorted number to the end.",selection:"Find the smallest number in the unsorted part and swap it into position (pass 1: first spot, pass 2: second spot...).",insertion:"Take the number at position (pass + 1) and move it left until it sits in the right place among the sorted numbers."};
+function sNew(){var s=new Set();while(s.size<6)s.add(1+Math.floor(Math.random()*99));var o=[0,1,2,3,4,5];so={alg:so.alg,vals:Array.from(s),ord:o,base:o.slice(),k:1,sel:-1,m:"Do pass 1 yourself, then press Check."};sDraw()}
+function sPass(a,k,alg){var b=a.slice(),n=b.length,t,j,m;
+ if(alg=="bubble"){for(j=0;j<n-k;j++)if(b[j]>b[j+1]){t=b[j];b[j]=b[j+1];b[j+1]=t}}
+ else if(alg=="selection"){m=k-1;for(j=k;j<n;j++)if(b[j]<b[m])m=j;t=b[k-1];b[k-1]=b[m];b[m]=t}
+ else{var key=b[k];j=k-1;while(j>=0&&b[j]>key){b[j+1]=b[j];j--}b[j+1]=key}
+ return b}
+function sVals(o){return o.map(function(i){return so.vals[i]})}
+function sDraw(){var h='<div class="row tabs">';
+ ["bubble","selection","insertion"].forEach(function(a){h+='<button class="'+(so.alg==a?"on":"")+'" onclick="so.alg=\''+a+'\';sNew()">'+a+'</button>'});
+ h+='</div><p class="mu">'+INFO[so.alg]+' Tap one number, then another, to swap them.</p><svg viewBox="0 0 316 70" width="340">';
+ so.vals.forEach(function(v,i){h+='<g class="nd" id="n'+i+'" onclick="sTap('+i+')"><circle r="22"/><text y="6">'+v+'</text></g>'});
+ h+='</svg><p><b id="sk"></b> <span id="sm"></span></p><div class="row"><button class="p" onclick="sCheck()">Check pass</button><button onclick="sUndo()">Undo pass</button><button onclick="sShow()">Show correct result</button><button onclick="sNew()">New list</button></div>';
+ $("vz").innerHTML=h;sLay();sMsg(so.m)}
+function sMsg(m){so.m=m;$("sk").textContent="Pass "+so.k+" of 5:";$("sm").innerHTML=m}
+function sLay(){so.ord.forEach(function(id,p){var g=$("n"+id);g.style.transform="translate("+(28+p*52)+"px,35px)";g.classList.toggle("sel",p==so.sel)})}
+function sTap(id){var p=so.ord.indexOf(id);
+ if(so.sel<0)so.sel=p;else{if(so.sel!=p){var t=so.ord[so.sel];so.ord[so.sel]=so.ord[p];so.ord[p]=t}so.sel=-1}sLay()}
+function sUndo(){so.ord=so.base.slice();so.sel=-1;sLay();sMsg("Pass reset.")}
+function sExp(){return sPass(sVals(so.base),so.k,so.alg)}
+function sShow(){so.ord=sExp().map(function(v){return so.vals.indexOf(v)});so.sel=-1;sLay();sMsg("This is the list after pass "+so.k+". Press Undo to try it yourself, or Check to continue.")}
+function sCheck(){var ok=JSON.stringify(sExp())==JSON.stringify(sVals(so.ord));rec(ok);
+ if(!ok){sMsg('<span class="bad">Not quite.</span> Your list: '+sVals(so.ord).join(", ")+'. Re-read the rule above, or use Undo pass.');return}
+ if(so.k>=5){sMsg('<span class="ok">Sorted! All passes correct.</span>');return}
+ so.base=so.ord.slice();so.k++;sMsg('<span class="ok">Correct!</span> Now do the next pass.')}
+V[7]=sNew;
+/* ---- Week 8: binary search (tap the element to check next) ---- */
+var bs={};
+function bNew(){var a=[],x=0;for(var i=0;i<12;i++){x+=2+Math.floor(Math.random()*8);a.push(x)}bs={a:a,t:a[Math.floor(Math.random()*12)],lo:0,hi:11,n:0,done:0,m:"Tap the element binary search checks first."};bDraw()}
+function bDraw(){var h='<p>Find <b>'+bs.t+'</b> in this sorted list. Tap the element binary search would check next.</p><div class="row">';
+ bs.a.forEach(function(v,i){var off=i<bs.lo||i>bs.hi;h+='<button onclick="bTap('+i+')" style="width:48px;padding:6px 0;'+(off?'opacity:.25':'')+'">'+v+'<br><small class="mu">'+i+'</small></button>'});
+ $("vz").innerHTML=h+'</div><p>'+bs.m+'</p><button onclick="bNew()">New list</button>'}
+function bTap(i){if(bs.done||i<bs.lo||i>bs.hi)return;var mid=(bs.lo+bs.hi)>>1;
+ if(i!=mid){rec(false);bs.m='<span class="bad">Not the middle.</span> Range is index '+bs.lo+' to '+bs.hi+'. Middle = (low + high) // 2.'}
+ else{bs.n++;var v=bs.a[mid];
+  if(v==bs.t){bs.done=1;rec(true);bs.m='<span class="ok">Found '+v+' at index '+mid+' in '+bs.n+' step(s).</span>'}
+  else if(v<bs.t){bs.lo=mid+1;bs.m=v+' < '+bs.t+': discard the left half. What is checked next?'}
+  else{bs.hi=mid-1;bs.m=v+' > '+bs.t+': discard the right half. What is checked next?'}}
+ bDraw()}
+V[8]=bNew;
+
+function svgN(x,y,t,c,f,r){return '<g class="nd '+c+'" transform="translate('+x+','+y+')" onclick="'+f+'"><circle r="'+(r||22)+'"/><text y="6">'+t+'</text></g>'}
+/* ---- Week 2: stack / queue (tap the numbers on the right to push, tap the item to pop) ---- */
+var sq={mode:"stack"};
+function qNew(){var o=[],l=0,i;for(i=0;i<8;i++){if(l>0&&(l>=4||Math.random()<.4)){o.push(-1);l--}else{o.push(Math.floor(Math.random()*10));l++}}sq={mode:sq.mode,o:o,i:0,it:[],m:""};qDraw()}
+function qName(x){var s=sq.mode=="stack";return x<0?(s?"pop()":"dequeue()"):(s?"push(":"enqueue(")+x+")"}
+function qDraw(){var s=sq.mode=="stack",x=sq.o[sq.i],h='<div class="row tabs">';
+ ["stack","queue"].forEach(function(a){h+='<button class="'+(sq.mode==a?"on":"")+'" onclick="sq.mode=\''+a+'\';qNew()">'+a+'</button>'});
+ h+='</div><p>Operations: ';sq.o.forEach(function(v,i){h+='<code'+(i==sq.i?' style="outline:2px solid var(--ac)"':'')+'>'+qName(v)+'</code> '});
+ h+='</p><p><b>'+(x===undefined?'<span class="ok">Sequence complete!</span>':(x>=0?'Now '+qName(x)+': tap the number '+x+' on the right.':'Now '+qName(x)+': tap the item that leaves.'))+'</b></p>';
+ h+='<div style="display:flex;align-items:flex-start;gap:16px"><div style="flex:1;min-width:0"><p class="mu">'+(s?"bottom to top":"front to rear")+':</p><div class="row" style="min-height:48px">';
+ sq.it.forEach(function(v,j){h+='<button onclick="qTap('+j+')" style="width:44px">'+v+'</button>'});
+ h+='</div></div><div style="display:grid;grid-template-columns:repeat(5,44px);gap:4px">';
+ for(var n=0;n<10;n++)h+='<button onclick="qPad('+n+')" style="padding:8px 0">'+n+'</button>';
+ $("vz").innerHTML=h+'</div></div><p id="mm">'+sq.m+'</p><button onclick="qNew()">New sequence</button>'}
+function qPad(n){var x=sq.o[sq.i];if(x===undefined)return;
+ if(x<0)sq.m="The next operation removes an item: tap it in the "+sq.mode+".";
+ else if(n!=x){rec(false);sq.m='<span class="bad">Wrong number.</span> The operation is '+qName(x)+'.'}
+ else{sq.it.push(n);sq.i++;sq.m="Added "+n+".";if(sq.i>=sq.o.length)rec(true)}qDraw()}
+function qTap(j){var x=sq.o[sq.i];if(x===undefined)return;
+ if(x>=0){sq.m="The next operation adds a number: tap it on the right.";qDraw();return}
+ var e=sq.mode=="stack"?sq.it.length-1:0;
+ if(j!=e){rec(false);sq.m='<span class="bad">Not that one.</span> '+(sq.mode=="stack"?"A stack is LIFO: last in, first out.":"A queue is FIFO: first in, first out.")}
+ else{sq.it.splice(j,1);sq.i++;sq.m="Removed.";if(sq.i>=sq.o.length)rec(true)}qDraw()}
+V[2]=qNew;
+/* ---- Week 3 (BST search path) and Week 6 (traversals); 7 or 15 nodes ---- */
+var tr={n:7};
+function tPos(i){var l=Math.floor(Math.log2(i+1)),k=i-(Math.pow(2,l)-1);return[(k+.5)*320/Math.pow(2,l),28+l*55]}
+function tOrd(ty,i,n,o){if(i>=n)return o;if(ty=="pre-order")o.push(i);tOrd(ty,2*i+1,n,o);if(ty=="in-order")o.push(i);tOrd(ty,2*i+2,n,o);if(ty=="post-order")o.push(i);return o}
+function tNew(k,ty,n){n=n||tr.n||7;var s=new Set();while(s.size<n)s.add(1+Math.floor(Math.random()*99));var a=Array.from(s).sort(function(x,y){return x-y}),v=[];
+ tOrd("in-order",0,n,[]).forEach(function(p,i){v[p]=a[i]});tr={k:k,n:n,ty:ty||tr.ty||"in-order",v:v,t:v[Math.floor(Math.random()*n)],vis:[],m:""};tDraw()}
+function tDraw(){var t=tr,h='<div class="row tabs">',L=t.n>7?4:3;
+ [7,15].forEach(function(n){h+='<button class="'+(t.n==n?"on":"")+'" onclick="tNew(tr.k,tr.ty,'+n+')">'+n+' nodes</button>'});h+='</div>';
+ if(t.k=="t"){h+='<div class="row tabs">';["in-order","pre-order","post-order"].forEach(function(k){h+='<button class="'+(t.ty==k?"on":"")+'" onclick="tNew(\'t\',\''+k+'\')">'+k+'</button>'});
+  h+='</div><p>Tap the nodes in <b>'+t.ty+'</b> order. In-order: left, root, right. Pre-order: root, left, right. Post-order: left, right, root.</p>'}
+ else h+='<p>Find <b>'+t.t+'</b> in this binary search tree. Start at the root and tap each node you would visit.</p>';
+ h+='<svg viewBox="0 0 320 '+(58+(L-1)*55)+'" width="340">';
+ t.v.forEach(function(v,i){if(i>0){var a=tPos((i-1)>>1),b=tPos(i);h+='<line x1="'+a[0]+'" y1="'+a[1]+'" x2="'+b[0]+'" y2="'+b[1]+'" stroke="var(--mu)"/>'}});
+ t.v.forEach(function(v,i){var p=tPos(i);h+=svgN(p[0],p[1],v,t.vis.indexOf(i)>=0?"sel":"","tTap("+i+")",t.n>7?15:22)});
+ $("vz").innerHTML=h+'</svg><p>Sequence: <b>'+(t.vis.map(function(i){return t.v[i]}).join(" &rarr; ")||"-")+'</b></p><p id="mm">'+t.m+'</p><button onclick="tNew(tr.k)">New tree</button>'}
+function tTap(i){var t=tr,n=t.vis.length,l=n?t.vis[n-1]:-1,e;
+ if(t.k=="t")e=tOrd(t.ty,0,t.n,[])[n];else e=!n?0:(t.v[l]==t.t?-1:(t.t<t.v[l]?2*l+1:2*l+2));
+ if(e===undefined||e<0)return;
+ if(i!=e){rec(false);t.m='<span class="bad">Not that one.</span> '+(t.k=="t"?"Re-read the "+t.ty+" rule.":(!n?"Start at the root.":"Compare "+t.t+" with "+t.v[l]+": smaller goes left, larger goes right."))}
+ else{t.vis.push(i);var d=t.k=="t"?t.vis.length==t.n:t.v[i]==t.t;
+  if(d){rec(true);t.m='<span class="ok">'+(t.k=="t"?"Traversal complete!":"Found "+t.t+" after "+t.vis.length+" node(s).")+'</span>'}
+  else t.m=t.k=="t"?"Correct. Next node?":"Compare "+t.t+" with "+t.v[i]+", then tap the next node."}
+ tDraw()}
+V[3]=function(){tNew("s")};V[6]=function(){tNew("t")};
+/* ---- Week 5 (BFS/DFS) and Week 12 (Dijkstra); undirected or directed ---- */
+var G=[[0,1,4],[0,2,2],[1,2,1],[1,3,5],[2,4,8],[3,4,2],[3,5,6],[4,5,3]],gs={},NM="ABCDEF";
+function nb(u){var r=[];G.forEach(function(e){if(e[0]==u)r.push([e[1],e[2]]);if(!gs.dir&&e[1]==u)r.push([e[0],e[2]])});return r.sort(function(a,b){return a[0]-b[0]})}
+function gOrd(s,ty){var o=[],q=[s],sn={};sn[s]=1;
+ if(ty=="BFS"){while(q.length){var u=q.shift();o.push(u);nb(u).forEach(function(x){if(!sn[x[0]]){sn[x[0]]=1;q.push(x[0])}})}}
+ else{(function d(u){sn[u]=1;o.push(u);nb(u).forEach(function(x){if(!sn[x[0]])d(x[0])})})(s)}
+ return o}
+function gp(i){var a=(-90+60*i)*Math.PI/180;return[150+105*Math.cos(a),150+105*Math.sin(a)]}
+function gNew(k,ty,dir){var d=dir===undefined?!!gs.dir:dir;gs={k:k,ty:ty||gs.ty||"BFS",dir:d,s:(k=="dj"||d)?0:Math.floor(Math.random()*6),vis:[],fin:[],d:[0,Infinity,Infinity,Infinity,Infinity,Infinity],m:""};gs.o=gOrd(gs.s,gs.ty);gDraw()}
+function gDraw(){var g=gs,dj=g.k=="dj",h='<div class="row tabs">';
+ if(!dj)["BFS","DFS"].forEach(function(a){h+='<button class="'+(g.ty==a?"on":"")+'" onclick="gNew(\'tr\',\''+a+'\')">'+a+'</button>'});
+ [false,true].forEach(function(d){h+='<button class="'+(g.dir==d?"on":"")+'" onclick="gNew(gs.k,gs.ty,'+d+')">'+(d?"Directed":"Undirected")+'</button>'});
+ h+='</div>'+(dj?'<p>Dijkstra from <b>A</b>. Tap the unvisited vertex with the smallest tentative distance to finalise next.</p>':'<p>Start at <b>'+NM[g.s]+'</b>. Tap the vertices in '+g.ty+' order. When there is a choice, take the alphabetically first.</p>');
+ h+='<svg viewBox="0 0 300 300" width="320"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0L8,4L0,8z" fill="var(--mu)"/></marker></defs>';
+ G.forEach(function(e){var a=gp(e[0]),b=gp(e[1]),dx=b[0]-a[0],dy=b[1]-a[1],L=Math.sqrt(dx*dx+dy*dy),x2=g.dir?b[0]-dx/L*24:b[0],y2=g.dir?b[1]-dy/L*24:b[1];
+  h+='<line x1="'+a[0]+'" y1="'+a[1]+'" x2="'+x2+'" y2="'+y2+'" stroke="var(--mu)"'+(g.dir?' marker-end="url(#ar)"':'')+'/>';
+  if(dj)h+='<text x="'+(a[0]+b[0])/2+'" y="'+(a[1]+b[1])/2+'" fill="var(--ac)" font-size="13" text-anchor="middle">'+e[2]+'</text>'});
+ for(var i=0;i<6;i++){var p=gp(i);h+=svgN(p[0],p[1],NM[i],g.vis.indexOf(i)>=0?"sel":"","gTap("+i+")")}
+ h+='</svg>';if(dj)h+='<p class="mu">'+g.d.map(function(x,i){return NM[i]+"="+(x==Infinity?"inf":x)}).join("&nbsp; ")+'</p>';
+ $("vz").innerHTML=h+'<p>Sequence: <b>'+(g.vis.map(function(i){return NM[i]}).join(" &rarr; ")||"-")+'</b></p><p id="mm">'+g.m+'</p><button onclick="gNew(gs.k,gs.ty)">Restart</button>'}
+function gTap(i){var g=gs;
+ if(g.k=="tr"){if(g.vis.length>=g.o.length)return;
+  if(i==g.o[g.vis.length]){g.vis.push(i);if(g.vis.length==g.o.length){rec(true);g.m='<span class="ok">All vertices visited in '+g.ty+' order!</span>'}else g.m="Correct. Next vertex?"}
+  else{rec(false);g.m='<span class="bad">Not next.</span> '+(g.ty=="BFS"?"BFS visits all neighbours of the earliest-visited vertex first (a queue).":"DFS goes as deep as possible before backing up (a stack).")}}
+ else{if(g.fin[i])return;var m=Infinity;g.d.forEach(function(x,j){if(!g.fin[j]&&x<m)m=x});
+  if(g.d[i]==m){g.fin[i]=1;g.vis.push(i);nb(i).forEach(function(x){if(g.d[i]+x[1]<g.d[x[0]])g.d[x[0]]=g.d[i]+x[1]});
+   if(g.vis.length==6){rec(true);g.m='<span class="ok">All shortest distances found!</span>'}else g.m=NM[i]+" finalised; neighbour distances updated. Next?"}
+  else{rec(false);g.m='<span class="bad">Not the smallest.</span> Pick the unvisited vertex with the smallest tentative distance.'}}
+ gDraw()}
+V[5]=function(){gNew("tr")};V[12]=function(){gNew("dj")};
+/* ---- Week 10: greedy coin change and DP Fibonacci table ---- */
+var gr={mode:"coin"};
+function cNew(){gr={mode:gr.mode,r:31+Math.floor(Math.random()*69),p:[],f:[0,1],m:""};cDraw()}
+function cDraw(){var h='<div class="row tabs"><button class="'+(gr.mode=="coin"?"on":"")+'" onclick="gr.mode=\'coin\';cNew()">Greedy: coin change</button><button class="'+(gr.mode=="fib"?"on":"")+'" onclick="gr.mode=\'fib\';cNew()">DP: Fibonacci table</button></div>';
+ if(gr.mode=="coin"){var rem=gr.r-gr.p.reduce(function(a,b){return a+b},0);
+  h+='<p>Make <b>'+gr.r+'</b> cents with the fewest coins. Remaining: <b>'+rem+'</b>. Coins used: '+(gr.p.join(", ")||"none")+'</p><div class="row">';
+  [25,10,5,1].forEach(function(c){h+='<button onclick="cPick('+c+')">'+c+'c</button>'});h+='</div>'}
+ else{var n=gr.f.length;h+='<p>Fill the table, each entry from the two before it.</p><div class="row">';gr.f.forEach(function(v,i){h+='<code>f('+i+')='+v+'</code>'});
+  h+='</div><p>f('+n+') = <input id="fi" type="number" style="width:90px"> <button class="p" onclick="cFib()">Check</button></p>'}
+ $("vz").innerHTML=h+'<p id="mm">'+gr.m+'</p><button onclick="cNew()">New problem</button>'}
+function cPick(c){var rem=gr.r-gr.p.reduce(function(a,b){return a+b},0);if(!rem)return;
+ var best=[25,10,5,1].filter(function(x){return x<=rem})[0];
+ if(c==best){gr.p.push(c);rem-=c;if(!rem){rec(true);gr.m='<span class="ok">Done with '+gr.p.length+' coins.</span> Greedy always takes the largest coin that fits.'}else gr.m="Good choice."}
+ else{rec(false);gr.m=c>rem?'<span class="bad">That coin is bigger than what remains.</span>':'<span class="bad">Greedy takes the largest coin that still fits.</span>'}cDraw()}
+function cFib(){var n=gr.f.length,v=$("fi").value;if(v==="")return;
+ if(+v==gr.f[n-1]+gr.f[n-2]){gr.f.push(+v);if(gr.f.length==10){rec(true);gr.m='<span class="ok">Table complete. Each value was computed once and reused.</span>'}else gr.m="Correct."}
+ else{rec(false);gr.m='<span class="bad">Not quite.</span> f('+n+') = f('+(n-1)+') + f('+(n-2)+').'}cDraw()}
+V[10]=cNew;
+/* ---- Week 11: 4-Queens backtracking ---- */
+var nq={};
+function nNew(){nq={q:[],t:[[],[],[],[]],m:"Place a queen in column 1: tap a cell."};nDraw()}
+function nSafe(r,c){for(var i=0;i<c;i++){if(nq.q[i]==r||Math.abs(nq.q[i]-r)==c-i)return 0}return nq.t[c].indexOf(r)<0}
+function nFree(c){for(var r=0;r<4;r++)if(nSafe(r,c))return 1;return 0}
+function nDraw(){var h='<p>Place one queen per column so none attack each other (row or diagonal). If a column has no safe cell, press Backtrack.</p><div style="display:grid;grid-template-columns:repeat(4,56px);gap:3px">';
+ for(var r=0;r<4;r++)for(var c=0;c<4;c++)h+='<button onclick="nTap('+r+','+c+')" style="height:56px;font-size:1.4rem;padding:0;'+(c==nq.q.length?'border-color:var(--ac)':'')+'">'+(nq.q[c]===r?"&#9819;":(nq.t[c].indexOf(r)>=0?'<span class="mu">x</span>':""))+'</button>';
+ $("vz").innerHTML=h+'</div><p id="mm">'+nq.m+'</p><button onclick="nBack()">Backtrack</button> <button onclick="nNew()">Restart</button>'}
+function nTap(r,c){var k=nq.q.length;if(k>3)return;
+ if(c!=k)nq.m="Work on column "+(k+1)+" (highlighted).";
+ else if(nSafe(r,c)){nq.q.push(r);if(nq.q.length==4){rec(true);nq.m='<span class="ok">Solved! All 4 queens are safe.</span>'}else nq.m="Placed. Next column."}
+ else{rec(false);nq.m='<span class="bad">Not allowed:</span> that cell is attacked by an earlier queen (or already tried).'}nDraw()}
+function nBack(){var k=nq.q.length;if(k>3||!k)return;
+ if(nFree(k))nq.m="This column still has a safe cell, so don't backtrack yet.";
+ else{var r=nq.q.pop();nq.t[k-1].push(r);nq.t[k]=[];nq.m="Backtracked: the queen in column "+k+" cannot lead to a solution. Try another cell there (x = already tried)."}nDraw()}
+V[11]=nNew;
+load();render();
+</script></body></html>
